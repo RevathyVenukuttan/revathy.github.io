@@ -9,24 +9,23 @@
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       margin: 60px auto;
       padding: 0 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       color: #333;
       background: #fff;
-      font-size: 16px;
-      line-height: 1.6;
+      font-size: 17px;
+      line-height: 1.75;
     }
 
     .container {
       display: flex;
-      gap: 40px;
+      gap: 50px;
       flex-wrap: wrap;
       align-items: flex-start;
     }
 
     .left {
       flex: 1;
-      min-width: 250px;
-      max-width: 300px;
+      max-width: 280px;
       text-align: center;
     }
 
@@ -47,13 +46,23 @@
       font-size: 16px;
       font-weight: normal;
       color: #777;
-      margin: 5px 0 20px 0;
+      margin: 6px 0 20px 0;
     }
 
-    .social-icons a img {
-      width: 28px;
-      margin: 0 8px;
-      vertical-align: middle;
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      background: white;
+      border-radius: 50%;
+      padding: 4px;
     }
 
     .right {
@@ -62,45 +71,52 @@
     }
 
     .right h3 {
-      font-size: 20px;
+      font-size: 24px;
       margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .right p {
+      font-size: 17px;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .left, .right {
+        text-align: center;
+      }
     }
   </style>
 </head>
-  
 <body>
+
   <div class="container">
     <div class="left">
       <img src="revathy.png" alt="Revathy Venukuttan" />
       <h1>Revathy Venukuttan</h1>
       <h2>PhD student, Computational Biology and Bioinformatics, Duke University</h2>
-      <div class="social-icons" style="margin-top: 20px; display: flex; gap: 16px; justify-content: center;">
-        <a href="mailto:revathyvenukuttan@gmail.com" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
-         alt="Email"
-         style="width:32px; height:32px; background:white; border-radius:50%; padding:4px;" />
-        </a>
-        
-        <a href="https://github.com/RevathyVenukuttan" target="_blank">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-         alt="GitHub"
-         style="width:32px; height:32px; background:white; border-radius:50%; padding:4px;" />
-        </a>
 
-        <a href="https://www.linkedin.com/in/revathy-venukuttan/" target="_blank">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-         alt="LinkedIn"
-         style="width:32px; height:32px; background:white; border-radius:50%; padding:4px;" />
+      <div class="social-icons">
+        <a href="mailto:revathyvenukuttan@gmail.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email" />
         </a>
-        
+        <a href="https://github.com/RevathyVenukuttan" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/revathy-venukuttan/" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+        </a>
         <a href="CV_RevathyVenukuttan.pdf" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg"
-         alt="CV"
-         style="width:32px; height:32px; background:white; border-radius:50%; padding:4px;" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="CV" />
         </a>
       </div>
+    </div>
 
-   <div class="right">
+    <div class="right">
       <h3>About</h3>
       <p>
         PhD student in Computational Biology with experience in functional genomics, machine learning, and regulatory sequence analysis. 
