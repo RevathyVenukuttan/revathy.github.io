@@ -6,97 +6,100 @@
   <title>Revathy Venukuttan</title>
   <style>
     body {
-      max-width: 800px;
-      margin: 80px auto;
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin: 60px auto;
+      padding: 0 20px;
+      max-width: 1000px;
+      color: #333;
+      background: #fff;
       font-size: 16px;
       line-height: 1.6;
-      color: #333;
-      padding: 0 20px;
-      background: #fff;
     }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.3em;
+
+    .container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      align-items: flex-start;
     }
-    h2 {
-      font-size: 1em;
+
+    .left {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .left img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .left h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .left h2 {
+      font-size: 16px;
       font-weight: normal;
       color: #777;
+      margin: 5px 0 20px 0;
+    }
+
+    .social-icons a img {
+      width: 28px;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+
+    .right {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .right h3 {
+      font-size: 20px;
       margin-top: 0;
-    }
-    p {
-      margin-top: 1.2em;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .links {
-      margin-top: 1.5em;
-    }
-    .intro {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .intro img {
-      width: 150px;
-      border-radius: 50%;
-    }
-    .text-block {
-      flex: 1;
-      min-width: 200px;
     }
   </style>
 </head>
 <body>
 
-  <div class="intro">
-    <img src="revathy.png" alt="Revathy Venukuttan" />
-    <div class="text-block">
+  <div class="container">
+    <div class="left">
+      <img src="revathy.png" alt="Revathy Venukuttan" />
       <h1>Revathy Venukuttan</h1>
       <h2>PhD student, Computational Biology and Bioinformatics, Duke University</h2>
+
+      <div class="social-icons">
+        <a href="mailto:revathyvenukuttan@gmail.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email">
+        </a>
+        <a href="https://github.com/RevathyVenukuttan" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/revathy-venukuttan/" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+        </a>
+        <a href="CV_RevathyVenukuttan.pdf" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="CV">
+        </a>
+      </div>
+    </div>
+
+    <div class="right">
+      <h3>About</h3>
+      <p>
+        PhD student in Computational Biology with experience in functional genomics, machine learning, and regulatory sequence analysis. 
+        Skilled in R, Python, and pipeline development in HPC and cloud environments. Experienced in working with large-scale genomic 
+        and transcriptomic data. Strong collaborator with a record of effective research communication and delivery.
+      </p>
     </div>
   </div>
-
-  <p>
-    PhD student in Computational Biology with experience in functional genomics, machine learning, and regulatory sequence analysis. 
-    Skilled in R, Python, and pipeline development in HPC and cloud environments. Experienced in working with large-scale genomic 
-    and transcriptomic data. Strong collaborator with a record of effective research communication and delivery.
-  </p>
-
-  <div class="links">
-  <p>
-    <a href="mailto:revathyvenukuttan@gmail.com" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" style="width:20px; vertical-align:middle; margin-right:6px;">
-      Email
-    </a>
-    &nbsp;&bull;&nbsp;
-
-    <a href="https://github.com/RevathyVenukuttan" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width:20px; vertical-align:middle; margin-right:6px;">
-      GitHub
-    </a>
-    &nbsp;&bull;&nbsp;
-
-    <a href="https://www.linkedin.com/in/revathy-venukuttan/" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style="width:20px; vertical-align:middle; margin-right:6px;">
-      LinkedIn
-    </a>
-    &nbsp;&bull;&nbsp;
-
-    <a href="CV_RevathyVenukuttan.pdf" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="CV" style="width:20px; vertical-align:middle; margin-right:6px;">
-      CV
-    </a>
-  </p>
-</div>
-
 
 </body>
 </html>
