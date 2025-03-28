@@ -6,7 +6,7 @@
   <title>Revathy Venukuttan</title>
   <style>
     body {
-      max-width: 600px;
+      max-width: 800px;
       margin: 80px auto;
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 16px;
@@ -38,13 +38,27 @@
     .links {
       margin-top: 1.5em;
     }
+    .intro {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .intro img {
+      width: 150px;
+      border-radius: 50%;
+    }
+    .text-block {
+      flex: 1;
+      min-width: 200px;
+    }
   </style>
 </head>
 <body>
-  <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-      <img src="revathy.png" alt="Revathy Venukuttan" style="width:150px; border-radius:50%;" />
-    
-    <div>
+
+  <div class="intro">
+    <img src="profile.png" alt="Revathy Venukuttan" />
+    <div class="text-block">
       <h1>Revathy Venukuttan</h1>
       <h2>PhD student, Computational Biology and Bioinformatics, Duke University</h2>
     </div>
@@ -64,8 +78,6 @@
       <a href="CV_RevathyVenukuttan.pdf" target="_blank">CV</a>
     </p>
   </div>
-</body>
-
 
 </body>
 </html>
