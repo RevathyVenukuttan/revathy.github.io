@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Revathy Venukuttan</title>
 
-  <!-- Font Awesome for monochrome icons -->
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
@@ -30,7 +30,7 @@
     .left {
       flex: 1;
       max-width: 280px;
-      text-align: left;
+      text-align: center;
     }
 
     .left img {
@@ -38,7 +38,6 @@
       height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      display: block;
       margin-bottom: 20px;
     }
 
@@ -57,11 +56,12 @@
     .contact-links {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 18px;
       margin-top: 15px;
     }
 
-    .contact-links a, .contact-links span {
+    .contact-links a {
       display: flex;
       align-items: center;
       font-size: 16px;
@@ -94,6 +94,50 @@
       text-align: justify;
     }
 
+    /* Education section */
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      border-bottom: 3px solid #2aa198;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .education-entry {
+      margin-top: 30px;
+    }
+
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .edu-left {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .edu-location {
+      font-weight: normal;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .edu-degree {
+      font-style: italic;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .edu-description {
+      margin-top: 5px;
+    }
+
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -104,6 +148,11 @@
       }
       .contact-links {
         justify-content: center;
+      }
+      .edu-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
       }
     }
   </style>
@@ -117,21 +166,60 @@
       <h2>PhD student, Computational Biology and Bioinformatics, Duke University</h2>
 
       <div class="contact-links">
-        <a href="https://github.com/RevathyVenukuttan" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/revathy-venukuttan/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://scholar.google.com/" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-        <a href="mailto:revathyvenukuttan@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/RevathyVenukuttan" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+        <a href="https://www.linkedin.com/in/revathy-venukuttan/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <a href="https://scholar.google.com/" target="_blank"><i class="fas fa-graduation-cap"></i>Scholar</a>
+        <a href="mailto:revathyvenukuttan@gmail.com"><i class="fas fa-envelope"></i>Email</a>
       </div>
     </div>
 
     <div class="right">
       <h3>About</h3>
       <p>
-        I’m a PhD student in Computational Biology and Bioinformatics at Duke University. My research lies at the intersection of genomics, machine learning, and disease biology. I enjoy using computational techniques to untangle complex biological questions and uncover patterns that can drive therapeutic insights. 
-        Before starting my PhD, I worked in with Dr. Tim Reddy's lab at Duke University trying to understand how non-coding regions of the genome contribute to gene regulation. I extensively worked with multiomic data integration for understanding T cell biology in the context of autoimmune diseases, exploring how their activation and differentiation contribute to pathogenesis. 
-        Beyond the lab, I’m deeply passionate about equitable global health and committed to mentoring students who are new to the field of genomics, especially those from underrepresented or non-traditional backgrounds.
-        When I'm not doing research, you’ll probably find me planning my next travel adventure, trying out new restaurants or new cuisines in the area, or walking around campus to unwind.
+        PhD student in Computational Biology with experience in functional genomics, machine learning, and regulatory sequence analysis. 
+        Skilled in R, Python, and pipeline development in HPC and cloud environments. Experienced in working with large-scale genomic 
+        and transcriptomic data. Strong collaborator with a record of effective research communication and delivery.
       </p>
+
+      <div class="education">
+        <div class="section-title">Education</div>
+
+        <div class="education-entry">
+          <div class="edu-header">
+            <div>
+              <div class="edu-left">Duke University</div>
+              <div class="edu-location">Durham, NC</div>
+            </div>
+            <div>AUG 2024 – Present</div>
+          </div>
+          <div class="edu-degree">PhD in Computational Biology and Bioinformatics</div>
+          <div class="edu-description">Doctoral research focused on regulatory genomics, machine learning, and large-scale functional genomics data analysis.</div>
+        </div>
+
+        <div class="education-entry">
+          <div class="edu-header">
+            <div>
+              <div class="edu-left">University of Illinois at Chicago (UIC)</div>
+              <div class="edu-location">Chicago, IL</div>
+            </div>
+            <div>AUG 2018 – MAY 2020</div>
+          </div>
+          <div class="edu-degree">MS in Bioinformatics</div>
+          <div class="edu-description">Studied computational genomics, machine learning, statistics, and molecular biology with applications in functional genomics.</div>
+        </div>
+
+        <div class="education-entry">
+          <div class="edu-header">
+            <div>
+              <div class="edu-left">College of Engineering Trivandrum (CET)</div>
+              <div class="edu-location">Kerala, India</div>
+            </div>
+            <div>AUG 2013 – JUN 2017</div>
+          </div>
+          <div class="edu-degree">B.Tech in Industrial Engineering</div>
+          <div class="edu-description">Explored industrial statistics, system design, and software engineering as part of an interdisciplinary technical program.</div>
+        </div>
+      </div>
     </div>
   </div>
 
