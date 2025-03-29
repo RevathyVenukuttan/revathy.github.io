@@ -53,29 +53,38 @@
       margin: 6px 0 20px 0;
     }
 
-    .contact-links {
+    .contact-icons {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       gap: 18px;
-      margin-top: 15px;
+      margin: 20px 0;
     }
 
-    .contact-links a {
-      display: flex;
-      align-items: center;
-      font-size: 16px;
+    .contact-icons a {
       color: #333;
+      font-size: 22px;
       text-decoration: none;
     }
 
-    .contact-links i {
-      margin-right: 6px;
-      font-size: 18px;
+    .contact-icons a:hover {
+      color: #007acc;
     }
 
-    .contact-links a:hover {
-      text-decoration: underline;
+    .cv-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      transition: background-color 0.2s ease;
+    }
+
+    .cv-button:hover {
+      background-color: #e6e6e6;
     }
 
     .right {
@@ -94,7 +103,6 @@
       text-align: justify;
     }
 
-    /* Education section */
     .section-title {
       font-size: 20px;
       font-weight: bold;
@@ -146,9 +154,6 @@
       .left, .right {
         text-align: center;
       }
-      .contact-links {
-        justify-content: center;
-      }
       .edu-header {
         flex-direction: column;
         align-items: flex-start;
@@ -165,22 +170,30 @@
       <h1>Revathy Venukuttan</h1>
       <h2>PhD student, Computational Biology and Bioinformatics, Duke University</h2>
 
-      <div class="contact-links">
-        <a href="https://github.com/RevathyVenukuttan" target="_blank"><i class="fab fa-github"></i>GitHub</a>
-        <a href="https://www.linkedin.com/in/revathy-venukuttan/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
-        <a href="https://scholar.google.com/" target="_blank"><i class="fas fa-graduation-cap"></i>Scholar</a>
-        <a href="mailto:revathyvenukuttan@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+      <div class="contact-icons">
+        <a href="https://github.com/RevathyVenukuttan" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/revathy-venukuttan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://scholar.google.com/" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+        <a href="mailto:revathyvenukuttan@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
+
+      <a class="cv-button" href="CV_RevathyVenukuttan.pdf" target="_blank" download>
+        Curriculum Vitae
+      </a>
     </div>
 
     <div class="right">
       <h3>About</h3>
       <p>
-        PhD student in Computational Biology with experience in functional genomics, machine learning, and regulatory sequence analysis. 
-        Skilled in R, Python, and pipeline development in HPC and cloud environments. Experienced in working with large-scale genomic 
-        and transcriptomic data. Strong collaborator with a record of effective research communication and delivery.
+        I’m a PhD student in Computational Biology and Bioinformatics at Duke University. My research lies at the intersection of genomics, machine learning, and disease biology. I enjoy using computational techniques to untangle complex biological questions and uncover patterns that can drive therapeutic insights.
       </p>
-
+      <p>
+        Before starting my PhD, I worked in with Dr. Tim Reddy's lab at Duke University trying to understand how non-coding regions of the genome contribute to gene regulation. I extensively worked with multiomic data integration for understanding T cell biology in the context of autoimmune diseases, exploring how their activation and differentiation contribute to pathogenesis. 
+      </p>
+      <p>
+        Beyond the lab, I’m deeply passionate about equitable global health and committed to mentoring students who are new to the field of genomics, especially those from underrepresented or non-traditional backgrounds. When I'm not doing research, you’ll probably find me planning my next travel adventure, trying out new restaurants or new cuisines in the area, or walking around campus to unwind.
+      </p>
+      
       <div class="education">
         <div class="section-title">Education</div>
 
