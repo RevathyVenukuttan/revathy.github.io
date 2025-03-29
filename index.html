@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Revathy Venukuttan</title>
+
+  <!-- Font Awesome for monochrome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <style>
     body {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -26,7 +30,7 @@
     .left {
       flex: 1;
       max-width: 280px;
-      text-align: center;
+      text-align: left;
     }
 
     .left img {
@@ -34,6 +38,7 @@
       height: 180px;
       border-radius: 50%;
       object-fit: cover;
+      display: block;
       margin-bottom: 20px;
     }
 
@@ -49,20 +54,22 @@
       margin: 6px 0 20px 0;
     }
 
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 10px;
+    .contact-links p {
+      margin: 10px 0;
     }
 
-    .social-icons img {
-      width: 32px;
-      height: 32px;
-      background: white;
-      border-radius: 50%;
-      padding: 4px;
+    .contact-links i {
+      width: 22px;
+    }
+
+    .contact-links a {
+      margin-left: 8px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
     }
 
     .right {
@@ -89,6 +96,11 @@
       .left, .right {
         text-align: center;
       }
+      .contact-links {
+        display: inline-block;
+        text-align: left;
+        margin-top: 20px;
+      }
     }
   </style>
 </head>
@@ -100,19 +112,12 @@
       <h1>Revathy Venukuttan</h1>
       <h2>PhD student, Computational Biology and Bioinformatics, Duke University</h2>
 
-      <div class="social-icons">
-        <a href="mailto:revathyvenukuttan@gmail.com" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email" />
-        </a>
-        <a href="https://github.com/RevathyVenukuttan" target="_blank">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-        </a>
-        <a href="https://www.linkedin.com/in/revathy-venukuttan/" target="_blank">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
-        </a>
-        <a href="CV_RevathyVenukuttan.pdf" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="CV" />
-        </a>
+      <div class="contact-links">
+        <p><i class="fab fa-github"></i><a href="https://github.com/RevathyVenukuttan" target="_blank">GitHub</a></p>
+        <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/revathy-venukuttan/" target="_blank">LinkedIn</a></p>
+        <p><i class="fas fa-graduation-cap"></i><a href="https://scholar.google.com/" target="_blank">Google Scholar</a></p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:revathyvenukuttan@gmail.com">Email</a></p>
+        <p><i class="fas fa-phone"></i><span style="margin-left:8px;">+1-312-613-2471</span></p>
       </div>
     </div>
 
